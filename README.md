@@ -83,7 +83,7 @@ You should modify the next parameters of audio output:
    - volume
      - The volume parameter in pyttsx3 controls the loudness of the speech. It is a float value between 0.0 (mute) and 1.0 (maximum volume). Adjusting this allows you to set the desired loudness level for the speech output.
    - language of speech
-     - [Available lnaguages](https://gist.github.com/asutekku/d5b09e5267b97c3af1f153a325089340) (applies only for macos)
+     - [Available languages](https://gist.github.com/asutekku/d5b09e5267b97c3af1f153a325089340) (applies only for macos)
 
 ```python
 # Example for frech usage with fast speech
