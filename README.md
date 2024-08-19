@@ -75,6 +75,26 @@ To convert a PDF file to an audio file, run the following command:
 poetry run python script.py
 ```
 
+### Settings
+
+You should modify the next parameters of audio output:
+   - rate
+     - The rate parameter in pyttsx3 controls the speed of speech, measured in words per minute (WPM). Lower values make the speech slower, while higher values increase the speed. Adjusting this allows you to tailor the speech pace to your needs.
+   - volume
+     - The volume parameter in pyttsx3 controls the loudness of the speech. It is a float value between 0.0 (mute) and 1.0 (maximum volume). Adjusting this allows you to set the desired loudness level for the speech output.
+   - language of speech
+     - [Available lnaguages](https://gist.github.com/asutekku/d5b09e5267b97c3af1f153a325089340) (applies only for macos)
+
+```python
+# Example for frech usage with fast speech
+convert_pdf_to_audio(
+    pdf_file='path/to/pdf_file.pdf',
+    output_file_name='path/to/outpu_audio_file.mp3',
+    language='fr-FR',
+    rate=250,
+)
+```
+
 This will convert the specified PDF file to an MP3 audio file.
 
 ### Cleaning up
